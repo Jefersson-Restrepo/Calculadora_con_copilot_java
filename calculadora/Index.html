@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="stylo.css" />
+  </head>
+  <body>
+    <nav><h3>Calculadora</h3></nav>
+    <main>
+      <div class="calculadora">
+        <div class="calculadora_nros">
+          <label for="nro1">Número 1</label>
+          <input type="number" id="nro1" placeholder="0" />
+          <label for="nro2">Número 2</label>
+          <input type="number" id="nro2" placeholder="0" />
+        </div>
+        <div class="calculadora_btns">
+          <input type="button" value="+" onclick="operaciones('+')">
+          <input type="button" value="-" onclick="operaciones('-')">
+          <input type="button" value="*" onclick="operaciones('*')">
+          <input type="button" value="/" onclick="operaciones('/')">
+          <input type="button" value="CLE" onclick="operaciones('CLE')">
+        </div>
+
+        <div class="calculadora_resultados">
+          <label id="resultado">000</label>
+        </div>
+      </div>
+    </main>
+    <script src="java.js"></script>
+  </body>
+</html>
